@@ -1,0 +1,86 @@
+﻿:root {
+    --titlebar-color: rgb(20, 20, 25);
+    --main-bg-color: rgb(70, 70, 80);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.titleButtonContainer {
+    height: 1.5em;
+    width: 4.5em;
+    position: fixed;
+    top: 0px;
+    left: calc(100% - 4.5em);
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleButton {
+    height: calc(1.5em - 10px);
+    width: calc(1.5em - 10px);
+    -webkit-app-region: no-drag;
+    transition: ease 0.3s all;
+    cursor: pointer;
+}
+
+.mainBody {
+    position:absolute;
+    top: 1.5em;
+    height: calc(100% - 1.5em);
+    width: 100%;
+}
+
+#titleBar {
+    width: 100%;
+    height: 1.5em;
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    background-color: var(--titlebar-color);
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+#titleText {
+    position: relative;
+    margin-left: 0.5em;
+    top: 0.25em;
+}
+
+#titleButtonClose {
+    background: url('assets/titleButton/titleButtonClose.png');
+    background-size:contain;
+}
+#titleButtonClose:hover {
+    background: url('assets/titleButton/titleButtonCloseDark.png');
+    background-size: contain;
+}
+#titleButtonMaximize {
+    background: url('assets/titleButton/titleButtonMax.png');
+    background-size: contain;
+}
+#titleButtonMaximize:hover {
+    background: url('assets/titleButton/titleButtonMaxDark.png');
+    background-size: contain;
+}
+#titleButtonMinimize {
+    background: url('assets/titleButton/titleButtonMin.png');
+    background-size: contain;
+}
+#titleButtonMinimize:hover {
+    background: url('assets/titleButton/titleButtonMinDark.png');
+    background-size: contain;
+}

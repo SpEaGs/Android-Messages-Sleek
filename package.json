@@ -1,0 +1,22 @@
+{
+  "name": "android-messages-sleek",
+  "version": "0.0.0",
+  "description": "Android-Messages-Sleek",
+  "main": "Main.js",
+  "scripts": {
+    "start": "electron .",
+    "debug": "node inspect-brk",
+    "dist-win": "build"
+  },
+  "author": {
+    "name": "Zach 'SpEaGs' Speagle",
+    "email": "speags557k4@gmail.com"
+  },
+  "dependencies": {
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "electron": "^2.0.4",
+    "electron-builder": "^20.19.2"
+  }
+}
