@@ -1,4 +1,12 @@
-﻿:root {
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+}
+
+:root {
     --titlebar-color: rgb(20, 20, 25);
     --main-bg-color: rgb(70, 70, 80);
 }
@@ -52,6 +60,7 @@ p {
     background-color: var(--titlebar-color);
     -webkit-user-select: none;
     -webkit-app-region: drag;
+    font-family: "Roboto";
 }
 
 #titleText {
