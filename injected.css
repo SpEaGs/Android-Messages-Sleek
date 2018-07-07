@@ -1,0 +1,20 @@
+.Wh4Cqb {
+    background-color: var(--darkGrey,rgb(54, 54, 54))!important;
+
+}
+.JsUZue {
+    background-color: var(--darkDarkGrey,rgb(20, 20, 25))!important;
+}
+html {
+    -header-color: var(--white,rgb(61, 61, 61));
+    --header-color-dark: var(--white,#fff);
+    --message-color: var(--white,#fff);
+    --message-color-dark: var(--white,#fff);
+    --blue-default: rgb(42,86,198);
+    --m2-incoming-message-bg: #f1f3f4;
+    --m2-incoming-message-color: rgba(0,0,0,.87);
+    --m2-outgoing-rcs-message-bg: #1a73e8;
+    --m2-outgoing-rcs-message-color: #fff;
+    --m2-outgoing-xms-message-bg: #d2e3fc;
+    --m2-outgoing-xms-message-color: #174ea6;
+}
