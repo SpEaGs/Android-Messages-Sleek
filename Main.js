@@ -5,6 +5,8 @@ const { app, BrowserWindow, ipcMain } = electron;
 const url = require('url');
 const path = require('path');
 
+
+
 let mainWindow;
 
 var logger = winston.createLogger({

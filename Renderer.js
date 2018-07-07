@@ -1,4 +1,6 @@
 ﻿
+const fs = require('fs')
+const path = require('path')
 const { remote, ipcRenderer } = require('electron');
 
 function min() {
@@ -13,3 +15,9 @@ function max() {
 function cl() {
     remote.getCurrentWindow().close();
 };
+
+const webview = document.getElementById('webviewMain');
+webview.addEventListener('dom-ready', function () {
+    webview.insertCSS(fs.readFileSync(path.join(__dirname, 'injected.css'), 'utf8'));
+    if (remote.process.env.NODE_ENV === "development") webview.openDevTools()
+});

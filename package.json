@@ -6,13 +6,15 @@
   "scripts": {
     "start": "electron .",
     "debug": "node inspect-brk",
-    "dist-win": "build"
+    "dist-win": "build",
+    "dev": "cross-env NODE_ENV=development electron . --enable-logging"
   },
   "author": {
     "name": "Zach 'SpEaGs' Speagle",
     "email": "speags557k4@gmail.com"
   },
   "dependencies": {
+    "cross-env": "^5.2.0",
     "winston": "^3.0.0"
   },
   "devDependencies": {
