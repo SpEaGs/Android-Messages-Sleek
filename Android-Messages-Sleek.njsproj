@@ -38,6 +38,7 @@
     <Content Include="Index.html">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="injected.css" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
