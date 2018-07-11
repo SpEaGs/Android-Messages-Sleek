@@ -67,6 +67,6 @@ app.on('activate', () => {
 
 ipcMain.once('init-eSender', (event, arg) => {
     eSender = event.sender;
-    let mins = 10;
+    let mins = 30;
     setInterval(function () { eSender.send('reload') }, (mins * 60000));
 });
