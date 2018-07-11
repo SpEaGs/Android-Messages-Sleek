@@ -8,6 +8,7 @@ const path = require('path');
 
 
 let mainWindow;
+let eSender;
 
 var logger = winston.createLogger({
     level: 'info',
@@ -62,4 +63,10 @@ app.on('activate', () => {
     if (mainWindow === null) {
         createWindow();
     };
+});
+
+ipcMain.once('init-eSender', (event, arg) => {
+    eSender = event.sender;
+    let mins = 10;
+    setInterval(function () { eSender.send('reload') }, (mins * 60000));
 });
