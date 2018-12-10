@@ -1,7 +1,7 @@
 
 const winston = require('winston');
 const electron = require('electron');
-const { app, BrowserWindow, ipcMain } = electron;
+const { app, BrowserWindow } = electron;
 const url = require('url');
 const path = require('path');
 
@@ -63,10 +63,4 @@ app.on('activate', () => {
     if (mainWindow === null) {
         createWindow();
     };
-});
-
-ipcMain.once('init-eSender', (event, arg) => {
-    eSender = event.sender;
-    let mins = 30;
-    setInterval(function () { eSender.send('reload') }, (mins * 60000));
 });
