@@ -5,7 +5,16 @@ const { app, BrowserWindow } = electron;
 const url = require('url');
 const path = require('path');
 const fs = require('fs');
-const config = require('./config.json');
+let config = {};
+if (!fs.existsSync('./config.json')) {
+    config = {
+        "windowState": {
+            "bounds": {}
+        }
+    }
+    fs.writeFileSync('config.json', JSON.stringify(config, null, 2));
+}
+else { config = require('./config.json'); }
 
 
 
