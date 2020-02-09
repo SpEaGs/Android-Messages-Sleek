@@ -4,15 +4,22 @@
   "description": "Android-Messages-Sleek",
   "main": "Main.js",
   "scripts": {
-    "start": "electron .",
-    "debug": "node inspect-brk",
-    "dist-win": "electron-builder build",
-    "dev": "cross-env NODE_ENV=development electron . --enable-logging"
+    "start": "cross-env NODE_ENV=production electron .",
+    "dev": "cross-env NODE_ENV=development electron . --enable-logging",
+    "dist-win": "electron-builder build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpEaGs/Android-Messages-Sleek.git"
   },
   "author": {
     "name": "Zachry 'SpEaGs' Speagle",
     "email": "speags557k4@gmail.com"
   },
+  "bugs": {
+    "url": "https://github.com/SpEaGs/Android-Messages-Sleek/issues"
+  },
+  "homepage": "https://github.com/SpEaGs/Android-Messages-Sleek#readme",
   "contributors": [
     "Colin 'Dr Dapper' McNeil"
   ],
